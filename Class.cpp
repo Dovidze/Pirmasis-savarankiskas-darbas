@@ -41,17 +41,15 @@ void Student::Deletepaz() {
 }
 
 void Student::PrintMediana() {
-	double math = std::accumulate(paz.begin(), paz.end(), 0.0) / paz.size();
-	double fscore = (0.4 * math) + (0.6 * egzpaz);
 	std::nth_element(paz.begin(), paz.begin() + paz.size() / 2, paz.end());
-	cout << left << setw(15) << pavarde << left << setw(15) << vardas << std::setprecision(2) << fscore << "/" << "(" << paz[paz.size() / 2] << ")" << endl;
+	cout << left << setw(15) << pavarde << left << setw(15) << vardas << paz[paz.size() / 2] << endl;
 }
 
 void Student::PrintFile() {
-	double math = std::accumulate(paz.begin(), paz.end(), 0.0) / paz.size();
-	double fscore = (0.4 * math) + (0.6 * egzpaz);
+	double vid = std::accumulate(paz.begin(), paz.end(), 0.0) / paz.size();
+	double galutinis = (0.4 * vid) + (0.6 * egzpaz);
 	std::nth_element(paz.begin(), paz.begin() + paz.size() / 2, paz.end());
-	cout << left << setw(15) << pavarde << left << setw(15) << vardas << std::setprecision(2) << fscore << "/" << std::setprecision(2) << "(" << math << ")" << "(" << paz[paz.size() / 2] << ")" << endl;
+	cout << left << setw(16) << pavarde << left << setw(21) << vardas << setw(20) << std::setprecision(2) << vid << paz[paz.size() / 2] << endl;
 
 };
 
@@ -59,7 +57,6 @@ void Student::PrintFile() {
 std::istream& operator >>(std::istream& input, Student& x) {
 	int nr;
 	int sk = 1;
-	char check;
 	cout << "--------------------------------Naujas Studentas-----------------------" << endl;
 	cout << "***********************************************************************" << endl;
 	cout << "" << endl;
@@ -75,11 +72,7 @@ std::istream& operator >>(std::istream& input, Student& x) {
 	while (true) {
 		
 		cin >> nr;
-		check = sk;
 
-		if (isalpha(nr)) {
-			break;
-		}
 		if (nr == 000) {
 			break;
 		}
