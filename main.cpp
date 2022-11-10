@@ -149,7 +149,7 @@ int main()
 							datafile << "---------------------------------------------" << endl;
 							for (int i = 1; i < 1000; i++) {
 								rvid = rand() % 100 + 1;
-								vid = rand() % 10 + 1;
+								vid = rand() % 10;
 								fvid = (float)rvid / 100 + (float)vid;
 								datafile << left << setw(14) << "Pavarde" + std::to_string(i) << left << setw(20) << "Vardas" + std::to_string(i) << std::setprecision(3) << fvid << endl;
 
@@ -169,7 +169,7 @@ int main()
 							datafile << "---------------------------------------------" << endl;
 							for (int i = 1; i < 10000; i++) {
 								rvid = rand() % 100 + 1;
-								vid = rand() % 10 + 1;
+								vid = rand() % 10;
 								fvid = (float)rvid / 100 + (float)vid;
 								datafile << left << setw(14) << "Pavarde" + std::to_string(i) << left << setw(20) << "Vardas" + std::to_string(i) << std::setprecision(3) << fvid << endl;
 
@@ -190,7 +190,7 @@ int main()
 							datafile << "---------------------------------------------" << endl;
 							for (int i = 1; i < 100000; i++) {
 								rvid = rand() % 100 + 1;
-								vid = rand() % 10 + 1;
+								vid = rand() % 10;
 								fvid = (float)rvid / 100 + (float)vid;
 								datafile << left << setw(14) << "Pavarde" + std::to_string(i) << left << setw(20) << "Vardas" + std::to_string(i) << std::setprecision(3) << fvid << endl;
 
@@ -211,7 +211,7 @@ int main()
 							datafile << "---------------------------------------------" << endl;
 							for (int i = 1; i < 1000000; i++) {
 								rvid = rand() % 100 + 1;
-								vid = rand() % 10 + 1;
+								vid = rand() % 10;
 								fvid = (float)rvid / 100 + (float)vid;
 								datafile << left << setw(14) << "Pavarde" + std::to_string(i) << left << setw(20) << "Vardas" + std::to_string(i) << std::setprecision(3) << fvid << endl;
 
@@ -231,7 +231,7 @@ int main()
 							datafile << "---------------------------------------------" << endl;
 							for (int i = 1; i < 10000000; i++) {
 								rvid = rand() % 100 + 1;
-								vid = rand() % 10 + 1;
+								vid = rand() % 10;
 								fvid = (float)rvid / 100 + (float)vid;
 								datafile << left << setw(14) << "Pavarde" + std::to_string(i) << left << setw(20) << "Vardas" + std::to_string(i) << std::setprecision(3) << fvid << endl;
 
